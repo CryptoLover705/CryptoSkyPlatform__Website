@@ -3,12 +3,65 @@
     padding: 0;
     background: none;
     color: rgb(0, 125, 209);
+    text-align: center;
+}
+
+.unstyled-button i {
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 125, 209);
 }
 
 .column {
     float: left;
     width: 33.33%;
     padding: 5px;
+    box-shadow: 0 12px 16px 0 rgb(8, 60, 155), 0 17px 50px 0 rgb(255, 255, 255);
+}
+
+.hr1 {
+    width: 50%;
+}
+
+.column p {
+    text-align: left;
+    margin: 15px;
+    padding: 5px;
+}
+
+.column p mark {
+    background-color: rgb(0, 125, 209);
+    color: white;
+}
+
+.s_button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.s_button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(0, 125, 209);
+}
+
+.s_button3:hover {
+    background-color: rgb(0, 125, 209);
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .row::after {
