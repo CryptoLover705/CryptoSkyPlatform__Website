@@ -15,10 +15,14 @@
     background: rgb(0, 125, 209);
 }
 
-.column {
+.col-lg-3 {
     float: left;
     width: 33.33%;
     padding: 5px;
+    border-radius: 5px;
+}
+
+.col-lg-3:hover {
     box-shadow: 0 12px 16px 0 rgb(8, 60, 155), 0 17px 50px 0 rgb(255, 255, 255);
 }
 
