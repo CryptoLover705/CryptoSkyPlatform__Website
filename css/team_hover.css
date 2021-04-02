@@ -1,0 +1,5 @@
+.aj:hover {
+    color: rgb(255, 230, 0);
+    transition: 0.4s;
+    cursor: pointer;
+}
