@@ -1,0 +1,24 @@
+.button {
+    background-color: #4e6fe6af;
+    /* Green */
+    border: none;
+    color: #ffffff;
+    float: right;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+.button2 {
+    box-shadow: 0 12px 16px 0 rgba(164, 255, 232, 0.808), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #4E70E6;
+}
