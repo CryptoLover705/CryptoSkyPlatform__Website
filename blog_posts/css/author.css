@@ -1,0 +1,24 @@
+.content-author {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 40px 60px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: rgb(49, 49, 49);
+    align-items: center;
+}
+
+.content-author__header {
+    text-align: center;
+}
+
+.content-author__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.content-author__title {
+    padding-bottom: 20px;
+    color: rgb(167, 167, 167);
+}
