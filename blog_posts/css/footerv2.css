@@ -193,7 +193,7 @@ ul {
 }
 
 .single_ftr li a:hover {
-    color: rgb(9, 9, 105);
+    color: rgb(1, 109, 233);
 }
 
 .ftr_social_icon li {
@@ -223,11 +223,9 @@ ul {
 
 .ftr_btm_area {
 	background: transparent;
-	padding-top: 20px;
-	padding-bottom: 20px;
+
 	border-top: 1px dotted #888;
-	margin-top: 28px;
-	z-index: 100;
+
 	position: relative;
 }
 .copyright_text{
@@ -240,3 +238,27 @@ ul {
 	font-size: 30px;
 	color: #fff;
 }
+
+.payment_mthd_icon li a {
+    color: #fff;
+}
+
+.payment_mthd_icon li a:hover {
+    color: #33d286;
+}
+
+@media screen and (max-width: 668px) {
+    .ftr_social_icon ul li a:hover{
+        background: #33d286;
+        border-color: #33d286;
+        color: #fff;
+    }
+    .payment_mthd_icon {
+        position:relative;
+        top:-120px;
+    }
+    .copyright_text {
+        position:relative;
+        top:30px;
+    }
+  }
