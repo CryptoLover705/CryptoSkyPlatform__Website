@@ -1,0 +1,181 @@
+.tripple {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.tripple::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: skyblue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.chreat {
+  padding: 5px 3px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.chreat.left {
+  left: 0;
+}
+
+.chreat.right {
+  left: 50%;
+}
+
+.chreat::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: black;
+  border: 2px solid #006E51;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.chreat.right::after {
+  left: -8px;
+}
+
+.chreat::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006E51;
+  z-index: 1;
+}
+
+.chreat.right::before {
+  left: 8px;
+}
+
+.chreat .dating {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006E51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.chreat.left .dating {
+  right: -120px;
+}
+
+.chreat.right .dating {
+  left: -75px;
+}
+
+.chreat .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #F6D155;
+  border: 2px solid #006E51;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #006E51;
+  z-index: 1;
+}
+
+.chreat.left .icon {
+  right: 56px;
+}
+
+.chreat.right .icon {
+  left: 56px;
+}
+
+.chreat .contest {
+  padding: 30px 90px 30px 30px;
+  background: #F6D155;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.chreat.right .contest {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.chreat .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #006E51;
+}
+
+.chreat .contest p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .tripple::after {
+    left: 90px;
+  }
+
+  .chreat {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 30px;
+  }
+
+  .chreat.right {
+    left: 0%;
+  }
+
+  .chreat.left::after,
+  .chreat.right::after {
+    left: 82px;
+  }
+
+  .chreat.left::before,
+  .chreat.right::before {
+    left: 100px;
+    border-color: transparent red transparent transparent;
+  }
+
+  .chreat.left .dating,
+  .chreat.right .dating {
+    right: auto;
+    left: 5px;
+  }
+
+  .chreat.left .icon,
+  .chreat.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .chreat.left .contest,
+  .chreat.right .contest {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
